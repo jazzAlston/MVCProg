@@ -1,0 +1,13 @@
+﻿@model List<MVCProg.Models.Car>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.JazzCreatedThisValue</h2>
+
+@foreach (var car in Model)
+{
+       <p>@car.ID -@car.Make -@car.Model</p>
+
+}
+
